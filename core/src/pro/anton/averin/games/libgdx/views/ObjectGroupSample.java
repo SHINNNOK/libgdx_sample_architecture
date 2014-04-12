@@ -51,12 +51,12 @@ public class ObjectGroupSample extends GameObjectsGroup {
         int chipHeight = 200;
         for (int i = 0; i < 10; i++) {
             TextureRegion chipRegion = new TextureRegion(res.sampleTexture, random.nextInt(res.sampleTexture.getWidth() - chipWidth), random.nextInt(res.sampleTexture.getHeight() - chipHeight), chipWidth, chipHeight);
-            addGameObject(new MosaicChip(screenRenderer, chipRegion, random.nextInt(_width), random.nextInt(_height), chipWidth, chipHeight));
+            addGameObject(new GameObjectSample(screenRenderer, chipRegion, random.nextInt(_width), random.nextInt(_height), chipWidth, chipHeight));
         }
     }
 
     public void update(float delta) {
-//        for (MosaicChip chip : chips) {
+//        for (GameObjectSample chip : chips) {
 //            chip.update(delta);
 //        }
     }
